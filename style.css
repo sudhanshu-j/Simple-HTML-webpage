@@ -1,0 +1,146 @@
+html,
+body {
+    min-width: 290px;
+    color: #e6eaff;
+    background-color: #000000;
+    font-family: 'Montserrat Alternates', sans-serif;
+    line-height: 1.6;
+}
+
+#sidebar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: #35cccc66;
+}
+
+h2 {
+    color: #a32828;
+    margin: 10px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: thin;
+}
+
+.html-document {
+    color: #a32828;
+}
+
+#documentation h2 {
+    text-align: left;
+    margin: 0px;
+}
+
+#sidebar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#sidebar li {
+    color: #35cccc66;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#sidebar .nav-item {
+    display: block;
+    padding: 10px 30px;
+    color: #b8bcce;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#documentation {
+    position: absolute;
+    margin-left: 310px;
+    padding: 20px;
+    margin-bottom: 110px;
+}
+
+section article {
+    color: #b2b9db;
+    margin: 15px;
+    font-size: 0.96em;
+}
+
+section li {
+    margin: 15px 0px 0px 20px;
+}
+
+#html_heading {
+    color: #b2b9db;
+}
+
+pre {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: #1d1919;
+    color: #ececff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.hscroll {
+    overflow-x: auto;
+}
+
+.hscroll a,
+#reference a {
+    color: #bdf08a98;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}
+
+@media only screen and (max-width: 815px) {
+
+    /* For mobile phones: */
+    #sidebar ul {
+        border: 1px solid;
+        height: 207px;
+    }
+
+    #sidebar {
+        background-color: #0e0b0b;
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+    }
+
+    #documentation {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #documentation {
+        margin-left: -10px;
+    }
+}
